@@ -1,0 +1,6 @@
+[ 2017-12-27T22:27:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] dev-apollo.com/api/v1/banner/1 [运行时间：0.057053s][吞吐率：17.53req/s] [内存消耗：1,884.02kb] [文件加载：36]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:dbname=apollo;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select T1.key_word, T1.type, T2.url from banner_item as T1, image as T2 where T1.banner_id ='1' and T1.img_id = T2.id [ RunTime:0.007783s ]
+
+---------------------------------------------------------------

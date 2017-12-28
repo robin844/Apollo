@@ -35,7 +35,8 @@ class Banner
 
         //get the Banner data by banner ID
         //try{
-            $banner = BannerModel::getBannerByID($id);
+        $banner = BannerModel::getBannerByID($id);
+//        $banner = BannerModel::all(['banner_id'=>$id]);
 //        }catch (Exception $ecp){
 //            $rtnMsg = [
 //                //get the error message
@@ -55,6 +56,7 @@ class Banner
             }else{
                 //if have exception, then throw it to exception handler
                 throw new NoBannerData();
+                //this is GITHUB
                 //throw  new Exception();
                 //return '11111111111';
             }

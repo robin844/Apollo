@@ -25,7 +25,7 @@ class ExceptionHDL extends Handle
     private $errCode;
 
     //public function render(Exception $e){
-    public function render($e){
+    public function render(\Exception $e){
         //去判断传进来的exception是否是来自于BaseException(即自定义的exception类型)
         //这种类型的exception需要想客户端返回提示信息
         if( $e instanceof BaseException){
@@ -65,7 +65,7 @@ class ExceptionHDL extends Handle
         //return 'hihi';
     }
 
-    private function dumpLog(Exception $ex1){
+    private function dumpLog(\Exception $ex1){
         //初始化Log的配置
         Log::init([
             'type'  => 'file',      //以file的形式来记录日志

@@ -21,3 +21,8 @@ define('LOG_PATH', __DIR__ . '/../log/');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';
 
+\think\Log::init([
+    'type'  => 'file',      //以file的形式来记录日志
+    'path'  => LOG_PATH,    //记录日志的路径,在index.php里面定义了
+    'level' => ['sql'],
+]);

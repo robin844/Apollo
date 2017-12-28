@@ -72,7 +72,7 @@ class Handle
      * @param  \Exception $e
      * @return Response
      */
-    public function render($e)
+    public function render(Exception $e)
     {
         if ($e instanceof HttpException) {
             return $this->renderHttpException($e);

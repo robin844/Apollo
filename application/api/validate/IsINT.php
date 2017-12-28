@@ -14,7 +14,7 @@ use app\api\validate\BaseValidate;
 class IsINT extends BaseValidate
 {
     protected $rule = [
-        'id' => 'require|isInteger',
-        //'num' => 'in:1,2,3',
-    ];
+    'id' => 'require|isInteger',
+    'num' => 'in:1,2,3',
+];
 }
